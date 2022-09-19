@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+{% block title %}Home-page{% endblock %}
+{% block carousel %}{% endblock %}
+{% block body %}
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+<style>
+    @media (min-width: 62em) {
+        .featurette-heading {
+            margin-top: 7rem;
+        }
+
+        .col-text{
+            background-color: rgba(65,105,225) !important;
+            color: #FFFFFF;
+        }
+    }
+</style>
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <h2 class="text-center text-light" id="navbarsackola">Nos Meilleurs produits en moment</h2>
+        <p>Découvrez nos porduits les plus vendus</p>
+        <div class="row">
+            {% for produit in best %}
+                {% include 'product/commun_index.html.twig' %}
+                
+            {% endfor %}
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 col-text">
+                <h4 class="featurette-heading">Chaque entreprise, un site web, est une
+                        vraie passion pour
+                        notre équipe de développeurs
+                </h4>
+
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="{{ asset('images/first.jpg') }}" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-6 order-md-2 col-text">
+                <h2 class="featurette-heading">
+                    Développement web, c'est notre métier au quotidien.
+                </h2>
+                <p class="lead">Venez découvrir nos métiers du wet et nos formations à ces métiers</p>
+            </div>
+            <div class="col-md-6 order-md-1">
+
+                    <img class="img-fluid" src="{{ asset('images/second.jpg') }}" alt="">
+
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+
+{% endblock %}
+
+
+

@@ -1,0 +1,97 @@
+
+.form-check{
+    background-color: #f4f8ff;
+    padding: 20px 65px;
+    margin-top: 7px;
+    top: 24px;
+}
+
+.btn-success, .demo-video{
+background-color: rgba(65,105,225) !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+}
+.container{
+
+    margin-bottom:6%;
+}
+
+.order_sumary{
+    background-color: #f4f8ff;
+    padding: 20px;
+    margin-top:22px;
+}
+.image-produit{
+    width: 75px;
+}
+.mesProduit{
+
+    padding: 10px;
+    margin-top : 6px;
+
+}
+
+.footer-per{
+
+    position: absolute;
+    text-align: center !important;
+    background-color: rgba(65,105,225) !important;
+
+}
+.nabar_item a {
+    text-decoration: none;
+    color: #fff;
+}
+.nabar_item a:hover {
+
+    color: #8ad0b5;
+}
+.comandFinal{
+    margin-top: 5%;
+}
+#navbarsackola{
+
+    background-color: rgba(65,105,225) !important;
+}
+.row h2 h3{
+    background-color: rgba(65,105,225) !important;
+    color: #FFFFFF;
+}
+.account-item{
+    background-color: #f1f2f6;
+    padding :30px;
+}
+.account-item  a {
+    text-transform: uppercase;
+    font-size:13px;
+    color: #4b6584;
+    font-weight: bold;
+}
+.account-item  a:hover {
+
+    color: #778ca3;
+    text-decoration: none
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        margin-top:18%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        margin-top:13%;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    .container {
+        margin-top:8%;
+    }
+}@media screen and (min-width: 540px) and (max-width: 720px) {
+
+    .container {
+        margin-top:12%;
+    }
+}

@@ -1,0 +1,8 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+dashboard:
+  path: /admin
+  controller: App\Controller\Admin\DashboardController::index
+_liip_imagine:
+  resource: "@LiipImagineBundle/Resources/config/routing.yaml"
