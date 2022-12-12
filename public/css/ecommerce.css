@@ -5,7 +5,8 @@
     top: 24px;
 }
 
-.btn-success {
+.btn-success,
+.demo-video {
     background-color: rgba(65, 105, 225) !important;
     text-align: center !important;
     color: #FFFFFF !important;
@@ -13,7 +14,7 @@
 
 .container {
 
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 
 .order_sumary {
