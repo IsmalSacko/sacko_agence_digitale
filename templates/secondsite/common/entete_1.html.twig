@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbarsackola">
-    <a class="navbar-brand text-white" href="{{ path('home_index') }}">
+    <a class="navbar-brand text-white" href="{{ path('agence') }}">
         <img style="width: 60px" src="{{ asset('images/img.png') }}" alt="Logo du site">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,24 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="{{ path('home') }}">
+                <a class="nav-link text-light" href="{{ path('agence') }}">
                     <i class="fas fa-home"></i>
 
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="{{ path('projets_realises-index') }}">
-                    <i class="fab fa-internet-explorer">Projets-Réalisés</i></a>
+                <a class="nav-link text-light" href="{{ path('projets_realises-index') }}">Projets-Réalisés</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="{{ path('ad_index') }}">
-                    <i class="fas fa-ad"></i>Offres</a>
+                <a class="nav-link text-light" href="{{ path('ad_index') }}"> Offres</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
-                   aria-haspopup="true" aria-expanded="false">
-                    <i class="fab fa-dev">Services</i></a>
+                   aria-haspopup="true" aria-expanded="false">Services</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item text-success" href="{{ path('agence') }}#dev_web">Dév-Web</a>
                     <a class="dropdown-item text-warning" href="{{ path('agence') }}#mob">Application-mobile</a>

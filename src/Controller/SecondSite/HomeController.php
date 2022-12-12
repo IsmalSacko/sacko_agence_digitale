@@ -11,9 +11,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/agence", name="agence")
+     * @Route("/", name="agence")
      */
-    public function index():Response    {
+    public function index(): Response
+    {
         return $this->render('secondsite/home/index.html.twig', [
             'titre' => 'Bienvenue | Agence',
         ]);
@@ -24,36 +25,42 @@ class HomeController extends AbstractController
      * @param AadRepository $repository
      * @return Response
      */
-    public function accueil(AadRepository $repository){
-        $titre ="Bienvenue sur la page de mon Agence de location";
+    public function accueil(AadRepository $repository)
+    {
+        $titre = "Bienvenue sur la page de mon Agence de location";
 
         return $this->render('secondsite/home/index.html.twig', [
-          'titre'  => $titre,
+            'titre'  => $titre,
             'ads' => $repository->findAll()
         ]);
     }
     /**
      * @Route ("/projets_realises", name="projets_realises-index")
      */
-    public function projet() : Response{
+    public function projet(): Response
+    {
         return $this->render('secondsite/home/projet.html.twig');
     }
 
     /**
      * @Route("/upload", name="upload")
      */
-    public function image(){
+    public function image()
+    {
         return $this->render('secondsite/upload.html.twig');
     }
     /**
      * @Route ("/dev-web", name="dev-wev_index")
      */
-        public function dev_web(){
+    public function dev_web()
+    {
         return $this->render('secondsite/home/dev_web.html.twig');
-    }/**
+    }
+    /**
      * @Route ("/demo", name="demo_index")
      */
-        public function demo(){
+    public function demo()
+    {
         return $this->render('secondsite/home/demo.html.twig');
     }
 }

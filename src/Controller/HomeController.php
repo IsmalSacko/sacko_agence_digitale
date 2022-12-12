@@ -25,7 +25,7 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/", name="home_index")
+     * @Route("/formations", name="home_index")
      */
     public function index(): Response
     {
@@ -37,6 +37,4 @@ class HomeController extends AbstractController
             'headers' => $headers,
         ]);
     }
-
-
 }

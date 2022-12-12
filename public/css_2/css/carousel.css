@@ -2,7 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body, html {
+body,
+html {
     padding-top: 0rem;
     padding-bottom: 0rem;
     color: #5a5a5a;
@@ -10,17 +11,21 @@ body, html {
 
 
 }
+
 body .btn {
     border-radius: 20px;
 
 }
-.marketing h2{
+
+.marketing h2 {
     text-align: center;
 }
+
 .container p {
     text-align: justify;
 }
-.container img{
+
+.container img {
     max-width: 120px;
     max-height: 120px;
     border-radius: 50%;
@@ -36,6 +41,7 @@ body .btn {
 .carousel {
     margin-bottom: 0rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     bottom: 3rem;
@@ -46,6 +52,7 @@ body .btn {
 .carousel-item {
     height: 32rem;
 }
+
 /*.carousel-item > img {
     position: absolute;
     top: 0;
@@ -63,9 +70,11 @@ body .btn {
     margin-bottom: 1.5rem;
     text-align: center;
 }
+
 .marketing h2 {
     font-weight: 400;
 }
+
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
@@ -76,7 +85,8 @@ body .btn {
 ------------------------- */
 
 .featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    margin: 5rem 0;
+    /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -101,12 +111,10 @@ body .btn {
     user-select: none;
 }
 
-@media only screen and (max-width: 600px){
-    body{
+@media only screen and (max-width: 600px) {
+    body {
         position: absolute;
 
     }
 
 }
-
-
