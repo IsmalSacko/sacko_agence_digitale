@@ -38,10 +38,15 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+		<li class="nav-item">
                 <a class="nav-link text-light" href="{{ path('demo_index') }}"><i class="fas
-                fa-play-circle"></i>Demo</a>
+                fa-play-circle text-danger"></i> Demo</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="https://e-formation.ismaeldev.com">
+                <i class="fa fa-leanpub text-warning" aria-hidden="true"></i> E-formation</a>
+            </li>           
+
             {% if is_granted("ROLE_ADMIN") %}
                 <li class="nav-item">
                     <a class="nav-link text-light" href="/admin">Admin</a>
